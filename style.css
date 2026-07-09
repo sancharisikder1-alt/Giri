@@ -1,0 +1,59 @@
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#1a1a1a,#3d0b2f);
+color:#fff;
+overflow-x:hidden;
+text-align:center;
+}
+.page{display:none;min-height:100vh;padding:40px 20px;justify-content:center;align-items:center;flex-direction:column}
+.page.active{display:flex}
+.title,.big{font-size:2.3rem;margin-bottom:20px}
+.typing,.wish,.letter,p{max-width:700px;line-height:1.7;font-size:1.1rem}
+.photo{
+width:280px;
+max-width:90%;
+border-radius:20px;
+margin:20px 0;
+box-shadow:0 10px 30px rgba(255,255,255,.25);
+}
+button{
+margin-top:20px;
+padding:14px 28px;
+border:none;
+border-radius:999px;
+background:#ff4f87;
+color:#fff;
+font-size:1rem;
+cursor:pointer;
+transition:.3s;
+}
+button:hover{transform:scale(1.05);background:#ff2d6f}
+.gift{
+font-size:90px;
+cursor:pointer;
+transition:.3s;
+}
+.gift:hover{transform:scale(1.15) rotate(8deg)}
+.letter{
+background:rgba(255,255,255,.08);
+padding:20px;
+border-radius:18px;
+max-width:700px;
+backdrop-filter:blur(8px);
+}
+.hearts::before{
+content:"❤️ 💖 ❤️ 💕 💗";
+position:fixed;
+left:0;
+right:0;
+top:10px;
+font-size:22px;
+animation:float 8s linear infinite;
+opacity:.7;
+}
+@keyframes float{
+0%{transform:translateY(100vh)}
+100%{transform:translateY(-120vh)}
+}

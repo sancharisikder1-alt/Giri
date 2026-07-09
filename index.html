@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Giri ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<section id="page1" class="page active">
+<h1 class="title">Hey Giri ❤️</h1>
+<p class="typing">I made something special just for you...</p>
+<button class="yes" onclick="nextPage()">Yes, Show Me ❤️</button>
+<button class="no" id="noBtn">No 🙈</button>
+</section>
+
+<section id="page2" class="page">
+<h1>🎉 Happy Birthday Giri 🎉</h1>
+<img src="giri.jpg" class="photo" alt="Giri">
+<p class="wish">
+Happy Birthday to someone who makes every day brighter.
+May your life be filled with happiness, success, love and beautiful memories. ❤️
+</p>
+<button onclick="openGift()">Open Your Gift 🎁</button>
+</section>
+
+<section id="page3" class="page">
+<h1>🎁 Surprise 🎁</h1>
+<div class="gift" onclick="showLetter()">🎁</div>
+</section>
+
+<section id="page4" class="page">
+<h1>💌 A Letter For You</h1>
+<div class="letter">
+Dear Giri,<br><br>
+Happy Birthday ❤️<br><br>
+I just wanted to make you smile today.<br>
+May every dream you have come true.<br>
+Stay happy. Stay blessed. Never stop smiling.<br><br>
+❤️
+</div>
+<button onclick="celebrate()">Final Surprise 🎉</button>
+</section>
+
+<section id="page5" class="page">
+<h1 class="big">🎂 HAPPY BIRTHDAY GIRI ❤️</h1>
+<p>May this year bring lots of happiness, success and unforgettable memories.</p>
+<div id="confetti"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
